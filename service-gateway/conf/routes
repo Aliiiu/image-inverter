@@ -18,4 +18,8 @@ GET            /error                                                          c
 GET            /error/                                                         controllers.HomeController.error()
 GET            /api-docs                                                       controllers.HomeController.api()
 
-->             /images                                                         images.Routes
+
+POST            /upload-image                                                   controllers.ImageController.uploadImage
+
+GET             /get-image/:filename                                            controllers.ImageController.getImage(filename:String)
+

@@ -42,8 +42,8 @@ public class ImageController extends Controller {
             paramType = "form",
             required = true
     )
-    public Result uploadImage(Http.Request request) {
-        Http.MultipartFormData<File> formData = request.body().asMultipartFormData();
+    public Result uploadImage() {
+        Http.MultipartFormData<File> formData = request().body().asMultipartFormData();
         Http.MultipartFormData.FilePart<File> filePart = formData.getFile("image");
         if (filePart != null) {
             File file = filePart.getFile();
