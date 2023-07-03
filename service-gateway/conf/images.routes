@@ -1,0 +1,4 @@
+
+POST    /upload-image     controllers.ImageController.uploadImage(request:Request)
+
+GET     /get-image/:filename        controllers.ImageController.getImage(filename:String)
